@@ -61,3 +61,13 @@ A tool PASS does not certify naturalness, icon comprehension, audio quality,
 learner outcomes or independent review. P-01 remains drafted until the
 required fresh reviewer signs off. No learner scores or audio are generated
 by any of these scripts.
+
+## Optional PDF conversion
+
+`export_pilot_pdf.cjs` exports the two existing P-01 draft lessons to
+combined/individual A4 PDFs, with embedded pictures, expanded scripts/keys
+and printable checkboxes. It does not change sources or lesson status.
+This optional Node/Chromium tool is separate from the standard-library
+Python curriculum checks. See `../exports/README.md` for pinned local-cache
+installation, rebuild instructions and PDF QA evidence. No renderer cache
+or page-preview image belongs in Git.

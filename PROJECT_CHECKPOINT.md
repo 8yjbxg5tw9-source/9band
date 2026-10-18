@@ -7,7 +7,26 @@
 - **Phase:** 2 Pilot — P-01 authoring and author/automated audit COMPLETE;
   independent review/validation PENDING. **Do not begin P-02 or L03.**
 
-## Last completed work (S-02 / P-01)
+## Latest completed work — requested PDF export (S-03, 2026-10-18)
+
+- Added `exports/P-01-Lessons-1-and-2.pdf` (43 A4 pages),
+  `exports/A0-M1-U1-L01.pdf` (20 pages) and
+  `exports/A0-M1-U1-L02.pdf` (23 pages). Lesson 2 begins on combined page 21.
+- Added reproducible `scripts/export_pilot_pdf.cjs`, `exports/README.md`
+  and `exports/PDF_EXPORT_QA.json`. Embedded images/fonts; scripts and
+  keys fully expanded; hidden machine records not printed.
+- PASS: all 86 prompt/key pairs, both four-line scripts, all 20 learner
+  sections per lesson, A4/selectable text/IPA/page bounds/no blank pages;
+  image/overflow checks and rendered-page inspection. All 41 prior
+  content/data/tool SHA-256 hashes still match; no lesson/data edits.
+- Core checks rerun: 624-lesson generator, 28-SVG builder, database
+  validation, normal/strict English audit, pilot audit, 33/33 regression
+  tests, Python/Node syntax and Git whitespace checks all PASS.
+- DRAFT copies remain outside validated-only student/. No recorded audio,
+  independent review, learner result, L03 or P-02 added. Next curriculum
+  action is still independent review, not another batch.
+
+## Previous authoring work (S-02 / P-01)
 
 1. Actual complete lesson sources:
    - `content/A0/A0-M1-U1-L01.md`: all 21 sections; 8 new words; 39 keyed

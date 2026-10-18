@@ -93,3 +93,15 @@ not by blindly trusting stale prose. Full rules: Deliverable E.
 |---|---|---|---|
 | 2026-10-18 | S-01 | Phase 1 A–G, records, templates, structure and seed data | original structure/validate/English guard PASS; historical limits recorded |
 | 2026-10-18 | S-02 / P-01 | Two complete 21-section lessons, 86 keyed prompts, 28 SVGs; inventory/scope repairs; persistent metadata; stricter QA, 33 tests; records/reports updated | structure/validate/English normal+strict/P-01 audit/33 tests PASS; independent review, recordings and learner testing pending |
+
+## 10. Requested draft PDFs (2026-10-18, S-03)
+
+Printable copies of the two existing P-01 lessons are now in
+[`exports/`](exports/README.md): a 43-page combined PDF plus 20-/23-page
+individual PDFs. All exercises, illustrations, keys, helper scripts and
+review plans are included. PDF integrity/content/layout checks and all
+core checks (33/33 tests) passed; all 41 original evidence hashes are
+unchanged. This conversion is not independent validation or student/
+publication; both lessons remain drafted, with no recorded audio or
+learner results and no additional lesson authored. The next curriculum
+gate remains independent review.

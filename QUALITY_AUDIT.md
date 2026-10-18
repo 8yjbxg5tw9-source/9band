@@ -67,3 +67,20 @@ is inferred from lesson production.
   expansion audit. Current content audit covers P-01, not all 622 planned files.
 - Phase 7: full-system final audit. Real learner outcomes and audio
   intelligibility always require their own evidence.
+
+## 6. PDF conversion check (2026-10-18; same two P-01 drafts)
+
+- PASS: combined/separate PDFs with embedded SVGs/fonts, expanded scripts/
+  keys, printable checkboxes and DRAFT/page footers.
+- PASS: 86 prompt/key pairs, 20 learner sections and four script lines per
+  lesson, IPA/symbol extraction, A4 dimensions, selectable text, page
+  bounds, no replacement characters and no blank pages. Combined 43 pages
+  equals individual 20 + 23 pages. HTML image/overflow checks also passed.
+- PASS: 43-page inspection sheet and representative reading-size renders
+  reviewed; all 41 prior content/data/tool hashes still match. All core
+  checks rerun successfully, including all 33 regression tests.
+- Evidence and exact PDF checksums: `exports/PDF_EXPORT_QA.json`.
+  Rebuild instructions/limits: `exports/README.md`.
+- This is author/tool **export QA**, not an independent pedagogical sign-off.
+  Draft status, CA-05, missing recordings and missing learner trials remain
+  unchanged; no source content, curriculum data or mastery result changed.
