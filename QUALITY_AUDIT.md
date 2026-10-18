@@ -84,3 +84,27 @@ is inferred from lesson production.
 - This is author/tool **export QA**, not an independent pedagogical sign-off.
   Draft status, CA-05, missing recordings and missing learner trials remain
   unchanged; no source content, curriculum data or mastery result changed.
+
+## 7. Independent-review handoff (2026-10-18, S-04)
+
+The user explicitly retained the independent gate after requesting the full
+course. This session prepares a handoff; it does **not** perform that review.
+
+- `exports/P-01-Independent-Review.zip`: two answer-blind HTML/Markdown views,
+  28 unchanged SVGs, separate helper scripts, original sources/keys and
+  protocol/inventory snapshots, 86 intentionally blank reviewer-response
+  rows, unfilled per-lesson Gates 1–7 form, exact input/output SHA-256s.
+- PASS (transport only): 39/47 IDs; all nonwithheld learner content preserved;
+  dedicated keys/helper disclosures/machine records absent from blind views;
+  actual HTML image loads, desktop/mobile bounds and no external resources;
+  ZIP integrity, safe relative paths and deterministic rebuild.
+- PASS: 45/45 regression tests (33 existing + 12 packet tests), syntax and
+  whitespace checks. All 41 previous content/tool hashes and all three
+  original PDF hashes remain unchanged.
+- `exports/P01_REVIEW_PACKET_QA.json` records packaging evidence;
+  `docs/P01_INDEPENDENT_REVIEW.md` gives the fresh-session workflow/prompt.
+- **CA-05 remains open; independent Gates 1–7 are still not performed.**
+  No new lesson, validation, learner result or recording. Reviewer must save
+  independent responses before opening keys; then return per-lesson evidence
+  and blockers for repair/lead decision. Author render checks are not a
+  zero-English learner trial or a fresh reviewer walkthrough.

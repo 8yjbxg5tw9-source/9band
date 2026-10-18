@@ -71,3 +71,21 @@ This optional Node/Chromium tool is separate from the standard-library
 Python curriculum checks. See `../exports/README.md` for pinned local-cache
 installation, rebuild instructions and PDF QA evidence. No renderer cache
 or page-preview image belongs in Git.
+
+## Independent-review packet (not a review)
+
+```bash
+python3 scripts/prepare_p01_review.py --html
+python3 scripts/prepare_p01_review.py --html --check
+python3 -m unittest discover -s scripts -p 'test*.py' -v
+```
+
+Extraction/packaging and all 45 tests use Python's standard library. Optional
+`--html` uses the same pinned cached markdown-it dependency as the PDF
+exporter; the resulting browser files need no runtime/network dependency.
+The generator produces one review ZIP; scratch files stay in .cache/. It
+never writes lesson/database status or completed reviewer evidence. Only the
+dedicated keys, helper script disclosures and hidden machine record are
+withheld from derivative views. Do not mistake response-form blanks for
+missing lesson content or passing packaging tests for independent review.
+See `../docs/P01_INDEPENDENT_REVIEW.md`; source changes require rebuild/review.

@@ -63,3 +63,15 @@ Rebuilding updates the three PDFs. Rerun PDF inspection and refresh
 `PDF_EXPORT_QA.json` if the PDFs or source content change; timestamps can
 change a PDF's checksum even when the lesson content is identical. PDF
 binaries are kept here because they are the specifically requested deliverable.
+
+## Separate independent-review handoff (S-04)
+
+[`P-01-Independent-Review.zip`](P-01-Independent-Review.zip) is NOT another
+course PDF or a completed review. It contains answer-blind offline browser/
+Markdown views of the SAME two drafts, separate scripts/original keys,
+28 original SVGs, 86 blank reviewer rows, an unfilled gate record and reference
+snapshots/checksums. The user chose to keep the review gate before more
+lessons are authored. Use a new independent reviewer/session and follow
+[`../docs/P01_INDEPENDENT_REVIEW.md`](../docs/P01_INDEPENDENT_REVIEW.md).
+Packaging-only evidence: `P01_REVIEW_PACKET_QA.json`. All three original PDFs
+above remain unchanged; neither new authoring nor validation is claimed.

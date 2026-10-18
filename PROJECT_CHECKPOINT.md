@@ -7,7 +7,31 @@
 - **Phase:** 2 Pilot — P-01 authoring and author/automated audit COMPLETE;
   independent review/validation PENDING. **Do not begin P-02 or L03.**
 
-## Latest completed work — requested PDF export (S-03, 2026-10-18)
+## Latest decision and handoff (S-04, 2026-10-18)
+
+- User requested the full **624-lesson A0–C1 + IELTS** course with final
+  delivery together, then explicitly selected **keep independent review
+  before new authoring**, not permission to continue unreviewed drafts.
+- The gate is therefore still binding: **do not author L03/P-02 yet**.
+  Only two complete drafts exist; the remaining 622 are not authored.
+- Prepared `exports/P-01-Independent-Review.zip` and
+  `docs/P01_INDEPENDENT_REVIEW.md`: two self-contained answer-blind HTML/
+  Markdown views, all 28 original pictures, separate helper scripts and
+  unmodified source/keys, 86 blank response rows and a blank Gates 1–7 form.
+- Added `scripts/prepare_p01_review.py` and `scripts/test_review_packet.py`.
+  Packaging/render/integrity/reproducibility checks and **45/45 tests PASS**
+  (33 existing + 12 packet tests). All 41 previous content/tool hashes and
+  all three lesson-PDF hashes are unchanged. Evidence:
+  `exports/P01_REVIEW_PACKET_QA.json`.
+- **Independent review has NOT occurred.** Author-prepared transport/views
+  and passing tests do not qualify. No gate result/status/score was invented;
+  no publication, new lesson, recording or learner evidence was added.
+- External next action: open the packet in a genuinely fresh independent
+  session/person, save/hash all 86 responses BEFORE opening sealed keys,
+  complete the review record, and return findings for repair/lead decision.
+  This conversation cannot spawn that separate Arena reviewer session.
+
+## Previous work — requested PDF export (S-03, 2026-10-18)
 
 - Added `exports/P-01-Lessons-1-and-2.pdf` (43 A4 pages),
   `exports/A0-M1-U1-L01.pdf` (20 pages) and
@@ -108,9 +132,10 @@
 
 ## Exact next action — stay in P-01
 
-Have a **fresh independent reviewer/session** read only the two lesson files,
-actual SVGs, P01_DELIVERY_GUIDE and language manifest; solve each task from
-student material before revealing its key. Log per-lesson Gates 1–7 and
+Use `docs/P01_INDEPENDENT_REVIEW.md` and the self-contained review ZIP with
+a **fresh independent reviewer/session**. Solve all 86 tasks from the blind
+student views and rendered pictures, save/hash responses, then reveal keys
+and the delivery guide/language manifest (both contain answer information). Log per-lesson Gates 1–7 and
 zero-English confusion points in QUALITY_AUDIT.md. Repair any blockers,
 rerun every check, then (only with real independent sign-off) advance to
 reviewed/validated through `data/lesson_metadata.json` and regenerate.

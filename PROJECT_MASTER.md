@@ -105,3 +105,15 @@ unchanged. This conversion is not independent validation or student/
 publication; both lessons remain drafted, with no recorded audio or
 learner results and no additional lesson authored. The next curriculum
 gate remains independent review.
+
+## 11. Full-course request; independent gate retained (2026-10-18, S-04)
+
+The user requested all 624 lessons with final delivery together, then chose
+**keep the independent-review gate**, not advance with unreviewed drafts.
+Production remains paused at two drafts (622 lessons not authored). Prepared
+a self-contained answer-blind handoff in `exports/P-01-Independent-Review.zip`;
+start at `docs/P01_INDEPENDENT_REVIEW.md` in a genuinely fresh reviewer session.
+All 45 tests and packaging/render/hash/rebuild checks pass, but no independent
+review has taken place. All source/PDF evidence is unchanged; no additional
+lesson, promotion, score, audio or student/ publication occurred. CA-05 remains
+open. The separate reviewer must return findings before new authoring.
