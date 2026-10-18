@@ -14,5 +14,7 @@ Rules:
 2. Blueprint before items; keys verified by second-pass solving.
 3. Status tracked in `ASSESSMENT_REGISTER.md`; sign-offs in `QUALITY_AUDIT.md`.
 
-Current status: no assessments authored yet (architecture phase; pilot tests
-A0-U01-T, A0-U02-T, A0-M1-C come first in Phase 2).
+Current status: no separate assessments authored. P-01 supplies the two
+embedded checks A0-M1-U1-L01-QZ and A0-M1-U1-L02-QZ inside their complete
+lesson sources; both are drafted, with keys/rubrics, no learner scores and
+fresh review pending. A0-U01-T, A0-U02-T and A0-M1-C remain planned.

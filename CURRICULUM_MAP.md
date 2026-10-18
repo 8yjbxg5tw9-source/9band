@@ -65,7 +65,10 @@ Deliverable B §B.8. Full rows: `GRAMMAR_DATABASE.csv`.
 | IE | 800 (receptive) | 7,800 | paraphrase banks; topic lexicons; collocational depth |
 
 Status flow planned→introduced→practiced→recalled→used→assessed→mastered;
-mastery criteria: Deliverable C. Seed rows: V0001–V0030 (A0-M1).
+mastery criteria: Deliverable C. Seed rows: V0001–V0030. P-01 supplies 13
+actual introductions across L01/L02; yes/no are deferred to A0-M2-U3-L02.
+No learner achievement is inferred from that coverage. Grammar availability
+is restricted by the scopes in `data/P01_LANGUAGE_MANIFEST.json`.
 
 ## 5. Skill strands (text/task types by level)
 
@@ -96,3 +99,6 @@ mastery criteria: Deliverable C. Seed rows: V0001–V0030 (A0-M1).
 | Date | Change |
 |---|---|
 | 2026-10-18 | Initial map created (Phase 1). G074 intro moved B1-U13→B1-U11 (load balance). |
+| 2026-10-18 / P-01 | L01 eight-word inventory enforced; my/your/name introduced L02; what/is advanced L03→L02; yes/no deferred to M2-U3. No lesson IDs/structure changed. |
+| 2026-10-18 / P-01 | G003/G004 first introduction L01; unnecessary G001 prerequisite removed; alphabet symbols begin L05. Scoped G011 my/your + name and G010 whole name question first taught L02; later possession/wh expansions retain dependencies. |
+| 2026-10-18 / P-01 | Two complete drafts and 28 actual SVGs authored/audited; persistent authoring overlay added to generator. 0 validated/tested; independent review pending. |

@@ -47,7 +47,7 @@ repair + retake + outcome are logged in §3.
 | Assessment family | Count | Status |
 |---|---|---|
 | DIAG-00 placement (all levels) | 1 | planned |
-| Lesson checks (embedded) | 624 | planned (authored with lessons) |
+| Lesson checks (embedded) | 624 | 2 drafted in P-01; 622 planned; 0 validated/ready |
 | Unit tests (A0–C1 + IE checkpoints as tests) | 98 | planned |
 | Module checkpoints | 46 | planned |
 | Level tests (A0–C1) | 6 | planned |
@@ -55,9 +55,25 @@ repair + retake + outcome are logged in §3.
 | IE diagnostic + mocks + readiness | 4 | planned |
 | **Total** | **~170 + 624 embedded** | |
 
-Per-assessment rows (ID, coverage, blueprint summary, status, validation)
-are added here as assessments are authored, starting with the pilot
-(A0-U01-T, A0-U02-T, A0-M1-C) in Phase 2.
+### P-01 embedded checks (actual authored content)
+
+| ID | Location | Primary blueprint (8 × 1 point) | Pass / evidence | Status |
+|---|---|---|---|---|
+| A0-M1-U1-L01-QZ | content/A0/A0-M1-U1-L01.md §17; key §18 | Q01–Q02 greeting/farewell (2); Q03/Q05/Q07 I am identity (3, Q07 oral); Q04/Q06/Q08 You are identity (3, Q08 written) | 6/8 = 75%, smallest whole-item total ≥70%; Q07 competent-listener evidence and Q08 retained writing needed | drafted; author/tool checked; fresh review pending; no score |
+| A0-M1-U1-L02-QZ | content/A0/A0-M1-U1-L02.md §17; key §18 | Q01/Q02/Q06 my/your (3); Q03/Q04/Q08 name/is frame (3, Q08 written); Q05/Q07 fixed name request (2, Q07 oral). Secondary objective overlap logged, never double-scored | 6/8 = 75%; same evidence rule | drafted; author/tool checked; fresh review pending; no score |
+
+Both checks test only explicitly taught P-01 words/scopes. Proper names are
+identity data, not spelling/vocabulary targets. Case, punctuation, name
+choice/spelling, accent and speed are not scored here. A correct natural
+contraction can be accepted but is never required. Complete-frame prompts
+are explicitly cued; broader natural-response tasks accept bare names too.
+Detailed binary oral/written rubrics: `docs/P01_DELIVERY_GUIDE.md` §6 and
+`data/P01_LANGUAGE_MANIFEST.json`. No oral evidence means **not-assessed**,
+not 0 or a guessed pass; no complete total is entered. Times are untrialled.
+
+Same-item corrections are practice only. No scored retake is offered;
+parallel forms are not authored yet. A0-U01-T, A0-U02-T and A0-M1-C remain
+planned and are NOT advanced in this batch.
 
 ## 3. Performance and remediation log
 
@@ -65,8 +81,9 @@ are added here as assessments are authored, starting with the pilot
 |---|---|---|---|---|---|
 | — | — | — | — | — | — |
 
-(No learner data yet — architecture phase. Rows added from Phase 2 onward.
-Parallel-form IDs recorded in the Retake column.)
+(No learner data or scores yet. P-01 materials are authored, not learner
+evidence. Parallel-form IDs will be recorded in the Retake column only
+after forms and actual attempts exist.)
 
 ## 4. Calibration notes
 

@@ -13,7 +13,10 @@ and validated per Deliverable D. Plus seed database rows for every new item.
    reviewer walkthroughs answering from student text alone.
 2. Zero English-only violations; zero uninventoried language in tests.
 3. All 12 lessons reach `validated`; checkpoint M1-C reaches `ready`.
-4. Unknown-language audit: every lesson ≥95% known running words.
+4. Unknown-language audit: ≥95% of lexical running words in the controlled
+   reading/practice are taught **before that use**, including explicitly
+   modeled current-lesson words. Report prior-lesson coverage separately;
+   L01 begins at 0%, not 95%. Never infer learner retention from coverage.
 5. Reviewer-reported confusion points ≤3 per lesson, all repaired or logged
    with a fix plan.
 
@@ -43,8 +46,8 @@ New words per lesson ≤8 (A0 rule). Grammar: one pattern per grammar slot.
 | Lesson | New words (≤8) | New grammar | Retrieval focus |
 |---|---|---|---|
 | U1-L01 First Words and Sounds | hello, hi, goodbye, bye, I, you, am, are | G003 (I/you), G004 (chunks I am/you are) | — (day 1) |
-| U1-L02 Grammar Foundations | my, your, name | G004 (frames), G011 (my/your preview) | L01 chunks |
-| U1-L03 Listening and Speaking | what, is, good, morning, evening, night | G010 (What is…? preview), G013 (listen/say/point) | L01–L02 |
+| U1-L02 Grammar Foundations | name, my, your, is, what (5) | G004 reviewed; G011 (my/your + name); G010 (fixed name question only) | L01 chunks |
+| U1-L03 Listening and Speaking | good, morning, evening, night, listen, say, point (7; planned, not authored in P-01) | G010 fixed chunk reviewed; G013 (demonstrated imperatives) | L01–L02 |
 | U1-L04 Reading and Vocabulary | (no new words; consolidation) | — | L01–L03 |
 | U1-L05 Writing and Pronunciation | (letter shapes A–M as symbols) | G002 (capitals, I) | all U1-L01–L03 |
 | U1-L06 Review and Unit Test | — | — | full U1; test A0-U01-T |
@@ -55,16 +58,25 @@ New words per lesson ≤8 (A0 rule). Grammar: one pattern per grammar slot.
 | U2-L05 Writing and Pronunciation | (no new; spelling names) | G002 (spelling, ? !) | all M1 |
 | U2-L06 Review and Unit Test | — | — | full M1; test A0-U02-T + M1-C |
 
-End-of-pilot inventory: ~40 words + A–Z + chunks (I am…, What is…?, This is…,
-imperatives). Every item gets database rows in Phase 2 (30 seed rows exist).
+End-of-pilot inventory remains an estimate (~40–45 items plus A–Z/chunks).
+Every actual introduced item must have a database row. **P-01 correction:**
+the 30 seed rows were not an authorised L01 inventory: my/your/name belong
+to L02; what/is move from L03 to L02 to close the question dependency; yes/no
+move to A0-M2-U3-L02. L01 still has exactly eight words. L03 can now budget
+its three explicit instruction verbs inside the eight-word cap. No L03
+content or new L03 database rows are authored in P-01. Scope and evidence:
+`data/P01_LANGUAGE_MANIFEST.json` and `docs/P01_AUDIT_REPORT.md`.
 
 ## F.4 Lesson-by-lesson plan (objectives + core activities)
 
 - **U1-L01.** Objectives: greet (hello/hi/goodbye/bye); say *I am + name*.
   Activities: P1 wave-hello/P2 wave-goodbye contrast; name-chain game; Lesson
   Check: match greeting→picture, complete *I am ___*.
-- **U1-L02.** Objectives: use *my/your + name*; ask *What…?* by rote.
-  Activities: ID-card craft (MY NAME IS…); point-and-ask pairs.
+- **U1-L02.** Objectives: use *My/Your name is + identity*; ask the complete
+  fixed chunk *What is your name?* and respond. All five words are explicitly
+  taught. Activities: pictured own/other name badges, speaker reversal,
+  hidden-name information gap, trace/copy/personal-name writing. No general
+  wh-question system, his/her, or object vocabulary is assumed.
 - **U1-L03.** Objectives: respond to *Listen/Say/Point*; use Good
   morning/evening/night at the right time. Activities: sun/moon/evening
   pictures; TPR chain.
@@ -91,7 +103,10 @@ imperatives). Every item gets database rows in Phase 2 (30 seed rows exist).
 > This compressed demo shows the method. The full Phase-2 lesson follows
 > `templates/LESSON_TEMPLATE.md` completely (exercises, key, recall, plans).
 
-**Title:** Hello and Goodbye — First Words and Sounds (45 min, self-study OK)
+**Title:** Hello and Goodbye — First Words and Sounds (original 45-minute
+architecture estimate; actual draft estimate 50–70 minutes, untrialled).
+Visual practice is supplied; pronunciation/listening require a competent
+helper until audio exists. This internal demo is not the learner file.
 
 **You can already:** nothing in English — start here. **After this lesson,
 you can:** 1) say hello and goodbye; 2) say *I am + your name*.
@@ -125,7 +140,10 @@ A: Hello! I am Tom. — B: Hi! I am Anna. — A: Goodbye, Anna! — B: Bye, Tom!
 
 ## F.6 Assessment pattern (pilot)
 
-- Lesson Checks: 6–8 items, ≥70% to continue (immediate retry after repair).
+- Lesson Checks: 6–8 items, ≥70% to continue; for eight whole-point items
+  this means 6/8 = 75%. Immediate correction is practice only, not a scored
+  retake. A scored retake requires a parallel form per Deliverable D. Missing
+  oral/written evidence means not-assessed, not a guessed score.
 - Unit tests A0-U01-T/A0-U02-T: 10 items (4 vocabulary recognition, 2 grammar
   completion, 2 listening-response, 1 speaking, 1 writing), 20 min, ≥70%.
 - Checkpoint M1-C: oral (greet + introduce + follow 3 imperatives) + written

@@ -35,12 +35,25 @@ its evidence.
 
 For every lesson, the reviewer verifies:
 
-- ≥95% of running words in A0–B1 texts are previously introduced (≥90% at
-  B2–C1; IE glosses support authentic texts).
+- ≥95% of lexical running words in A0–B1 controlled texts are explicitly
+  introduced **before the text/task**, including current-lesson teaching
+  (≥90% at B2–C1; IE glosses support authentic texts). Also report the
+  prior-lesson percentage: zero-English L01 starts at 0%. These are coverage
+  measures, not evidence of learner knowledge. Proper names are reported as
+  labels, not silently used to inflate the percentage.
 - No unintroduced grammar carries meaning (incidental occurrences must be
   meaning-transparent, e.g. a proper name, and are logged).
-- Instructions use known language + demonstrated actions (A0–A1) or known
-  language + glosses (A2+).
+- Instructions use known language + **actual demonstrated actions/images**
+  (A0–A1), or known language + glosses (A2+). At zero English, use the
+  demonstrated symbol route instead of silently requiring look/listen/
+  repeat/choose/book. An instruction word counts against the new-word cap
+  if it is taught. Image specifications alone are not supplied pictures.
+- Every non-target exception is listed by location and reason. Section
+  titles, optional IPA and delivery metadata may be reference-only if
+  action meaning is independently demonstrated. Do not exempt load-bearing
+  prose or hide language inside code fences, alt text or SVG descriptions.
+  Rendered SVG words are checked at each point of use; all student text
+  still passes the English-only guard.
 - New items ≤ per-lesson maxima and each has a database row.
 - Forward references ("as you will learn…") never carry current meaning.
 
@@ -54,7 +67,12 @@ A small amount of unfamiliar language is permitted only when: (a) meaning
 stays clear without it (proper names, cognate-proof glosses, picture-locked
 words); (b) it is logged in the lesson's New Language Record as
 `INCIDENTAL:`; (c) it is never tested. Incidental items must not include
-load-bearing grammar.
+load-bearing grammar. Picture-locked proper names may be identity data
+inside a frame, but their meaning/spelling is never a lexical test. A
+scoped grammar preview must be explicitly taught and registered: it is not
+incidental permission to use the rest of its topic. In P-01, G003 supports
+the main G004 identity frame; G011 is my/your + name only and G010 is only
+the fixed name question. Broader expansions retain their later dependencies.
 
 ## D.4 Quality gates (all blocking unless marked advisory)
 
@@ -122,9 +140,15 @@ drill monotony (same exercise type >3 lessons running) · review-plan gaps.
   signs off in `QUALITY_AUDIT.md`.
 - Validation record format: `lesson_id | reviewer | date | gates 1–7 pass |
   notes`. One line per lesson; no batch sign-offs.
+- Automated rule-based second-solving and an author reread are valuable
+  checks, but **do not constitute a fresh independent reviewer/session**.
+  When none is available, record author/automated results and leave the
+  lesson `drafted`, independent sign-off pending; do not publish to student/.
 
 ## D.9 Continuous improvement
 
 Every defect found post-validation gets a root-cause note in
 `QUALITY_AUDIT.md` and, where systemic, a procedure update here. Procedures
-are versioned (footer): current version **D-1.0 (2026-10-18)**.
+are versioned (footer): current version **D-1.1 (2026-10-18, P-01)**. Changes: explicit zero-English
+visual bootstrap; point-of-use versus entry coverage; scoped previews;
+actual SVG checking; no independent-review claim from author/tool passes.

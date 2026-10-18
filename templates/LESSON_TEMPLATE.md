@@ -4,6 +4,35 @@ Every student-facing lesson is authored from this template. Section headings in
 [BRACKETS] are author guidance and must be replaced by real student-facing
 content. Nothing in the final lesson may violate the English-only rule.
 
+> Authoring template **T-1.1 (2026-10-18, P-01)**.
+
+## Zero-English adaptation (mandatory at A0 entry)
+
+- Keep all 21 learner sections below, but replace abstract prose explanations
+  and directions with **actual supplied pictures, demonstrated action
+  symbols, known/new word contrasts and worked responses**. Headings may be
+  reference-only; do not require their comprehension.
+- Do not use look/listen/repeat/choose/read/write/say/book as assumed
+  instructional vocabulary. Teach a word explicitly within the A0 cap, or
+  demonstrate its action without the English label first.
+- Supply the images, not just prose describing images to be made later.
+  Check rendered text, speech-bubble tails, perspective and all prompt images.
+- Log before-use vocabulary markers, exact scopes and all navigation/IPA/
+  accessibility exceptions. No load-bearing prose can be declared incidental.
+  Report both entry/prior-lesson and point-of-use reading coverage.
+- One main new frame; supporting references or fixed-chunk previews require
+  explicit instruction and scoped database records. Deferred grammar is
+  not available merely because its broad topic has a first-introduction row.
+- Early copying is shape copying, not assumed alphabet knowledge. Names,
+  case, punctuation and accent must not become unstated assessment targets.
+- Keep complete keys/rubrics; use known-language frame cues where a complete
+  form is demanded. Put complex helper/scoring directions in a clearly
+  internal guide, not as untaught student instructions.
+- Script-only sound work requires a competent helper. Mouth diagrams/IPA
+  alone are not recorded audio or a fully independent sound-learning route.
+- An author reread or deterministic solver is not a fresh independent review.
+  Without that review, keep status drafted and student/ unpublished.
+
 ---
 
 # {LESSON_ID}: {Title}

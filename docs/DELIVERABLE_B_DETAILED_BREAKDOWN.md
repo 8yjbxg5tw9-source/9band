@@ -17,10 +17,10 @@ Conventions:
 
 | Module | Unit | Theme | Unit objective (learner can…) | New grammar |
 |---|---|---|---|---|
-| M1 First Contact | U1 | Hello and Goodbye | greet, say names with I am/you are | G001, G003, G004, G013 (+G002 in L05) |
+| M1 First Contact | U1 | Hello and Goodbye | greet, say/ask names with explicitly pictured chunks | G003/G004 in L01; G011 my/your + name and G010 fixed question in L02; G013 in L03; G001 symbols/G002 in L05 |
 | M1 | U2 | Names and the Alphabet | spell names; name objects with a/an | G005, G006 |
-| M2 People and Things | U3 | Family and Friends | say who people are; deny and ask with BE | G008, G009, G011 |
-| M2 | U4 | Colors, Numbers, and Objects | count to 100; point with this/that; ask What/Where | G007, G010, G012 |
+| M2 People and Things | U3 | Family and Friends | say who people are; deny and ask with BE | G008, G009; expand G011 beyond my/your + name |
+| M2 | U4 | Colors, Numbers, and Objects | count to 100; point with this/that; ask What/Where | G007, G012; expand G010 productively after G009 |
 | M3 Daily Life | U5 | Actions and Food | say what people do/eat (present simple) | G014, G015 |
 | M3 | U6 | Days, Time, and Likes | deny, ask, and answer about habits | G016, G017 |
 | M4 My World | U7 | Places and Weather | ask for details; say where things are | G018, G019, G020 |

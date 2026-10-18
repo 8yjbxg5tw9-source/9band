@@ -67,3 +67,13 @@ Architecture is **coherent and internally consistent**. Deliverables A–G are
 complete. The project may proceed to Phase 2 (pilot production) per
 `PROJECT_CHECKPOINT.md`. No blocking defects remain; open issues O-01–O-05
 are tracked, not ignored.
+
+## 6. P-01 correction note (S-02, 2026-10-18)
+
+This is the historical architecture audit, not an audit of authored lessons.
+P-01 found seed/plan introduction disagreements and an unnecessary alphabet
+prerequisite that the original pilot arithmetic did not catch. They are
+repaired in the current databases/Deliverables B–F and documented as
+Q-003/Q-004 in QUALITY_AUDIT.md. The original PASS must not be read as proof
+that zero-English content, audio, learner outcomes or all future dependency
+expansions were already validated. See docs/P01_AUDIT_REPORT.md.

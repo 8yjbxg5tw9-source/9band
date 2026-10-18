@@ -2,7 +2,8 @@
 """Canonical course structure for the 9band Zero-to-C1 + IELTS system.
 
 This file is the SINGLE SOURCE OF TRUTH for levels, modules, units, lessons,
-lesson IDs, and lesson-type rotation. All other records (CURRICULUM_MAP.md,
+lesson IDs, and lesson-type rotation. Authoring metadata is persistently
+overlaid from data/lesson_metadata.json (no structural overrides). All other records (CURRICULUM_MAP.md,
 LESSON_INDEX.csv, ASSESSMENT_REGISTER.md) must be consistent with it.
 
 Usage:
@@ -16,11 +17,18 @@ Rules enforced here:
 """
 
 import csv
+import json
 import os
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 LESSON_INDEX_PATH = os.path.join(ROOT, "LESSON_INDEX.csv")
 TABLES_PATH = os.path.join(ROOT, "docs", "STRUCTURE_TABLES.md")
+METADATA_PATH = os.path.join(ROOT, "data", "lesson_metadata.json")
+# Structure remains canonical here; only these authoring fields may be overlaid.
+AUTHORING_FIELDS = {
+    "objectives", "new_vocab_ids", "new_grammar_ids", "skills_focus",
+    "assessment_id", "validation_status", "notes",
+}
 
 # ---------------------------------------------------------------------------
 # Lesson-type rotations
@@ -401,10 +409,39 @@ def expected_counts():
     return counts
 
 
-def write_lesson_index():
+def load_lesson_metadata(path=METADATA_PATH):
+    """Read persistent authoring data without allowing structural overrides."""
+    if not os.path.exists(path):
+        raise ValueError("Missing lesson metadata; restore it rather than resetting authored progress.")
+    with open(path, encoding="utf-8") as f:
+        data = json.load(f)
+    if not isinstance(data, dict) or data.get("schema_version") != 1 or not isinstance(data.get("lessons"), dict):
+        raise ValueError("Lesson metadata requires schema_version 1 and a lessons object.")
+    known = {row["lesson_id"] for row in iter_lessons()}
+    for lesson_id, fields in data["lessons"].items():
+        if lesson_id not in known:
+            raise ValueError(f"Unknown metadata lesson: {lesson_id}")
+        if not isinstance(fields, dict) or not set(fields) <= AUTHORING_FIELDS:
+            raise ValueError(f"{lesson_id}: structural or unknown metadata fields are forbidden.")
+        if not all(isinstance(value, str) for value in fields.values()):
+            raise ValueError(f"{lesson_id}: metadata values must be strings.")
+    return data["lessons"]
+
+
+def authored_lessons(metadata=None):
+    """Merge structural rows and the checked, persistent authoring overlay."""
+    if metadata is None:
+        metadata = load_lesson_metadata()
     lessons = list(iter_lessons())
+    for row in lessons:
+        row.update(metadata.get(row["lesson_id"], {}))
+    return lessons
+
+
+def write_lesson_index():
+    lessons = authored_lessons()
     with open(LESSON_INDEX_PATH, "w", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(f, fieldnames=LESSON_INDEX_HEADER)
+        writer = csv.DictWriter(f, fieldnames=LESSON_INDEX_HEADER, lineterminator="\n")
         writer.writeheader()
         writer.writerows(lessons)
     return lessons

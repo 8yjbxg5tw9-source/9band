@@ -1,0 +1,387 @@
+{
+  "schema_version": 1,
+  "batch_id": "P-01",
+  "date": "2026-10-18",
+  "scope": [
+    "A0-M1-U1-L01",
+    "A0-M1-U1-L02"
+  ],
+  "proper_names": [
+    "Anna",
+    "Tom"
+  ],
+  "proper_name_policy": "Picture-locked identity data, not lexical/spelling targets. A learner's actual name or a chosen pictured role is accepted in personal responses. No knowledge of the meaning or spelling of an English name is assumed.",
+  "instruction_policy": "No English instruction verb is load-bearing. Six action icons are bootstrapped by the five actual nonverbal action sequences in actions.svg, with worked responses before each task family. Numerals and shape matching are non-language conventions demonstrated visually, not English counting targets.",
+  "reference_exemptions": {
+    "headings": "NOT exempt: actual learner headings use only symbols, IDs or already-taught words, and all rendered heading words/images are checked at the point of use. The 21 template functions are mapped by number in the internal delivery guide.",
+    "blockquote": "Coded level/module/unit/lesson sequence only; no new English words or task direction.",
+    "summary": "The technical SCRIPT ONLY — no audio recording disclosure notice and the key-uncover tick are helper/navigation labels, not load-bearing learner instructions. The actual helper-reading picture independently demonstrates what happens.",
+    "image_alt_and_svg_title_desc": "English accessibility/helper descriptions of the actual supplied images, not an alternative zero-English route. Rendered SVG text is separately inventory-checked at each use. The pilot is visual-dependent and has not been tested for screen-reader-only use.",
+    "html_comments": "Template machine record and introduction/reading markers; hidden, not student dialogue or instructions. English-only guard still scans them.",
+    "ipa": "Exact registered IPA and /ɡʊd/, /b/ fragments in sound diagrams; optional reference, never a learner prerequisite or assessment target. Visual mouths alone cannot supply all speech sounds."
+  },
+  "forbidden_assumed_words": [
+    "look",
+    "listen",
+    "repeat",
+    "choose",
+    "book",
+    "read",
+    "write",
+    "say",
+    "point",
+    "circle",
+    "cover",
+    "check"
+  ],
+  "grammar_scopes": {
+    "G003": {
+      "first_lesson": "A0-M1-U1-L01",
+      "scope": "I/you singular with an explicitly pictured speaker and listener.",
+      "requires": [],
+      "not_yet_taught": "he/she/it/we/they; alphabet knowledge is not a prerequisite."
+    },
+    "G004": {
+      "first_lesson": "A0-M1-U1-L01",
+      "scope": "Only I am/You are + a personal identity label, as one main affirmative identity frame.",
+      "requires": [
+        "G003"
+      ],
+      "not_yet_taught": "it is; non-identity complements; contractions as taught forms; negatives G008; yes/no questions G009."
+    },
+    "G011": {
+      "first_lesson": "A0-M1-U1-L02",
+      "scope": "Only my/your + name; the main new frame is My/Your name is + identity.",
+      "requires": [
+        "G004"
+      ],
+      "expansion_lesson": "A0-M2-U3-L02",
+      "not_yet_taught": "his/her; ownership of arbitrary objects."
+    },
+    "G010": {
+      "first_lesson": "A0-M1-U1-L02",
+      "scope": "Only the explicitly taught whole chunk What is your name?, plus its taught identity responses. This is not a generative wh-question rule.",
+      "requires": [
+        "G004",
+        "G011"
+      ],
+      "expansion_lesson": "A0-M2-U4-L02",
+      "expansion_requires": [
+        "G009"
+      ],
+      "not_yet_taught": "Who/Where questions; other What questions; productive inversion."
+    }
+  },
+  "rubric_definitions": {
+    "greet": "hello or hi in a meeting; all natural case/punctuation variants accepted",
+    "leave": "goodbye or bye on departure, optionally with the visible identity label",
+    "self": "I am + the speaker's identity; actual learner identity or pictured role; a natural contraction is acceptable if independently produced, but is not taught or required",
+    "you-tom": "You are Tom, addressed to the pictured listener; the communicative frame is scored, not copying the name's spelling",
+    "name-self": "My name is + the speaker's identity; actual identity or pictured role",
+    "name-you-tom": "Your name is Tom, with Tom as the listener in the picture",
+    "name-question": "An intelligible What is your name? request. A naturally produced contraction is also acceptable, although not modeled. Speed and accent are not scored",
+    "name-answer": "My name is + identity, I am + identity, or the bare identity label is a natural answer. The bare label is communicatively correct but is not evidence of using the new frame",
+    "dialogue-l01": "Follow the displayed role exchange, including greeting, both identity frames and taking leave; either taught greeting/farewell variant is acceptable",
+    "personal-dialogue-l01": "Greeting + I am + own/role identity + farewell; no model name is required",
+    "dialogue-l02": "Both roles in the displayed name/badge exchange; whole question, both My name is answers and appropriate Your name is confirmations",
+    "personal-dialogue-l02": "Whole name request + My name is + own/role identity",
+    "copy": "Copy the complete displayed model; no independent spelling or punctuation knowledge is assumed",
+    "self-anna": "I am Anna in the pictured role, not the learner's own identity",
+    "two-be-gaps": "I takes am and you takes are, in that order",
+    "name-link-gap": "is links name and identity; not am or are",
+    "question-link-gap": "is in the already-taught fixed name question"
+  },
+  "assessment_policy": {
+    "points_per_item": 1,
+    "items_per_lesson_check": 8,
+    "pass_points": 6,
+    "pass_percent_actual": 75,
+    "rounding": "ceil(0.70 * 8) = 6; no claim that 6/8 is exactly 70%",
+    "unscored_dimensions": [
+      "name choice",
+      "name spelling",
+      "capitalisation",
+      "punctuation",
+      "accent",
+      "speed"
+    ],
+    "speaking_evidence": "Q07 needs a competent listener and retained observation/recording. Without evidence, Q07 is not assessed and no complete total or pass is recorded. No learner results currently exist.",
+    "retake": "Same-item repairs are practice only. No scored retake is offered before a parallel form exists."
+  },
+  "lessons": {
+    "A0-M1-U1-L01": {
+      "path": "content/A0/A0-M1-U1-L01.md",
+      "new_vocab": [
+        "V0001",
+        "V0003",
+        "V0002",
+        "V0004",
+        "V0007",
+        "V0009",
+        "V0008",
+        "V0010"
+      ],
+      "new_grammar": [
+        "G003",
+        "G004"
+      ],
+      "reviewed_vocab": [],
+      "reviewed_grammar": [],
+      "grammar_teaching_order": [
+        "G003",
+        "G004"
+      ],
+      "prerequisites": [],
+      "techniques": [
+        "picture-first contrast",
+        "demonstrated nonverbal actions",
+        "pointing to speaker/listener",
+        "chunk before analysis",
+        "role reversal",
+        "trace-copy-personalise",
+        "cover-recall-check"
+      ],
+      "objectives": {
+        "greet-and-leave": {
+          "practice": [
+            "A01",
+            "A02",
+            "A03",
+            "A04",
+            "B01",
+            "B02",
+            "S02"
+          ],
+          "check": [
+            "Q01",
+            "Q02"
+          ]
+        },
+        "self-identity": {
+          "practice": [
+            "A05",
+            "A07",
+            "B03",
+            "W02",
+            "T03",
+            "T05"
+          ],
+          "check": [
+            "Q03",
+            "Q05",
+            "Q07"
+          ]
+        },
+        "listener-identity": {
+          "practice": [
+            "A06",
+            "A08",
+            "B04",
+            "W03",
+            "T04"
+          ],
+          "check": [
+            "Q04",
+            "Q06",
+            "Q08"
+          ]
+        }
+      },
+      "task_counts": {
+        "L": 4,
+        "R": 4,
+        "A": 8,
+        "B": 4,
+        "S": 2,
+        "W": 3,
+        "T": 6,
+        "Q": 8
+      },
+      "open_rubrics": {
+        "B01": "greet",
+        "B02": "leave",
+        "B03": "self",
+        "B04": "you-tom",
+        "S01": "dialogue-l01",
+        "S02": "personal-dialogue-l01",
+        "W01": "copy",
+        "W02": "self",
+        "W03": "copy",
+        "T01": "greet",
+        "T02": "leave",
+        "T03": "self-anna",
+        "T04": "you-tom",
+        "T05": "self",
+        "T06": "two-be-gaps",
+        "Q07": "self",
+        "Q08": "you-tom"
+      },
+      "intentional_error_examples": [
+        "I are Anna.",
+        "You am Tom.",
+        "I are Tom.",
+        "You am Anna.",
+        "I Anna.",
+        "I are ___.",
+        "You am Tom."
+      ],
+      "review_intervals": [
+        "next lesson",
+        "+1",
+        "+3",
+        "+7",
+        "+21",
+        "+60"
+      ],
+      "next_lesson_review": "L02 section 1: six cold prompts H01-H06 cover all eight L01 words before any L02 teaching. Other T01-T06 equivalents can also be retrieved; no success is pre-recorded."
+    },
+    "A0-M1-U1-L02": {
+      "path": "content/A0/A0-M1-U1-L02.md",
+      "new_vocab": [
+        "V0013",
+        "V0011",
+        "V0012",
+        "V0015",
+        "V0014"
+      ],
+      "new_grammar": [
+        "G011",
+        "G010"
+      ],
+      "reviewed_vocab": [
+        "V0001",
+        "V0003",
+        "V0002",
+        "V0004",
+        "V0007",
+        "V0009",
+        "V0008",
+        "V0010"
+      ],
+      "reviewed_grammar": [
+        "G003",
+        "G004"
+      ],
+      "grammar_teaching_order": [
+        "G011",
+        "G010"
+      ],
+      "prerequisites": [
+        "A0-M1-U1-L01"
+      ],
+      "techniques": [
+        "cold recall of prior words",
+        "picture-locked labels",
+        "perspective reversal",
+        "equivalent known/new frames",
+        "hidden-name information gap",
+        "chunk before analysis",
+        "trace-copy-personalise",
+        "cover-recall-check"
+      ],
+      "objectives": {
+        "my-versus-your": {
+          "practice": [
+            "A07",
+            "A08",
+            "B01",
+            "B02",
+            "T02",
+            "T04"
+          ],
+          "check": [
+            "Q01",
+            "Q02",
+            "Q06"
+          ]
+        },
+        "name-frame": {
+          "practice": [
+            "A01",
+            "A02",
+            "A03",
+            "B01",
+            "B02",
+            "W02",
+            "W03",
+            "T05"
+          ],
+          "check": [
+            "Q03",
+            "Q04",
+            "Q08"
+          ]
+        },
+        "whole-name-request-and-response": {
+          "practice": [
+            "A04",
+            "A05",
+            "A06",
+            "B03",
+            "B04",
+            "S01",
+            "S02",
+            "W04",
+            "T03",
+            "T06"
+          ],
+          "check": [
+            "Q05",
+            "Q06",
+            "Q07",
+            "Q08"
+          ]
+        }
+      },
+      "task_counts": {
+        "H": 6,
+        "L": 4,
+        "R": 4,
+        "A": 8,
+        "B": 4,
+        "S": 2,
+        "W": 4,
+        "T": 7,
+        "Q": 8
+      },
+      "open_rubrics": {
+        "B01": "name-self",
+        "B02": "name-you-tom",
+        "B03": "name-question",
+        "B04": "name-answer",
+        "S01": "dialogue-l02",
+        "S02": "personal-dialogue-l02",
+        "W01": "copy",
+        "W02": "name-self",
+        "W03": "copy",
+        "W04": "copy",
+        "T01": "greet",
+        "T02": "name-self",
+        "T03": "name-question",
+        "T04": "name-you-tom",
+        "T05": "name-link-gap",
+        "T06": "question-link-gap",
+        "T07": "leave",
+        "Q07": "name-question",
+        "Q08": "name-self",
+        "H05": "self-anna",
+        "H06": "you-tom"
+      },
+      "intentional_error_examples": [
+        "My name Anna.",
+        "Your name are Tom.",
+        "What your name is?",
+        "You name is Tom."
+      ],
+      "review_intervals": [
+        "next lesson",
+        "+1",
+        "+3",
+        "+7",
+        "+21",
+        "+60"
+      ],
+      "next_lesson_review": "Reserved for L03 section 1: T01, T02, T03, T04, T07 equivalents before new language. L03 is not authored or advanced in this batch."
+    }
+  }
+}

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 100 100" role="img" aria-labelledby="title desc">
+<title id="title">See and point</title>
+<desc id="desc">An eye and a fingertip directed at a visible card.</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#203846"/></marker></defs>
+<rect width="100" height="100" rx="20" fill="#fffdf7"/>
+<g transform="translate(50 36) scale(0.85)"><path d="M -39 0 Q 0 -38 39 0 Q 0 38 -39 0" fill="white" stroke="#203846" stroke-width="5"/><circle cx="0" cy="0" r="13" fill="#0f766e" stroke="none" stroke-width="3"/><circle cx="0" cy="0" r="6" fill="#203846" stroke="none" stroke-width="3"/></g><line x1="50" y1="63" x2="50" y2="86" stroke="#0f766e" stroke-width="5" stroke-linecap="round" marker-end="url(#arrow)"/>
+</svg>

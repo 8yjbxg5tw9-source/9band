@@ -19,18 +19,27 @@ all future tooling must follow them).
    productive success are tracked as different evidence types.
 5. **Mastery is durable.** It requires spaced retrievals including a delayed
    (≥7-day) success plus assessment evidence.
+6. **Coverage is not learner achievement.** These shared CSVs are curriculum
+   inventories. `introduced` can cite a complete authored meaning/form/
+   example/picture introduction; it does not say that a real learner has
+   studied it. `practiced` and later achievement states still need actual
+   recorded responses. P-01 has no learner history or mastery evidence.
+7. **Scope is explicit.** A topic row may begin with a tightly defined chunk;
+   notes and the language manifest delimit what is available. Later topic
+   expansions retain their own prerequisites. Partial introduction does not
+   mean the entire grammar topic is covered.
 
 ## C.2 VOCABULARY_DATABASE.csv schema
 
 | Column | Type | Rules |
 |---|---|---|
-| `vocab_id` | `V%04d` | Unique, never reused, assigned in introduction order. |
+| `vocab_id` | `V%04d` | Unique, never reused; append new IDs. Existing seed IDs remain stable when a planned introduction is corrected. |
 | `headword` | text | Dictionary form (or taught chunk, e.g. *thank you*). |
 | `part_of_speech` | enum | noun / verb / adjective / adverb / determiner / pronoun / preposition / conjunction / interjection / article / question word / phrase / other. |
 | `phonemic_transcription` | IPA in `/…/` | Required from A1 up; A0 uses modeled pronunciation first, IPA added at A0 review. |
 | `audio_status` | enum | `script-only` until a recording exists and is verified; then `verified:<file>:<seconds>`. Never claim audio otherwise. |
 | `sense_number` | int | 1, 2, 3… per headword; each sense is its own row. |
-| `meaning_simple_english` | text | Definition using only previously known language. Required. |
+| `meaning_simple_english` | text | Controlled English gloss or picture-backed example/label. Required. At zero, actual pictures must ground the micro-gloss; an unfamiliar English definition alone is not teaching. |
 | `level` | enum | A0/A1/A2/B1/B2/C1/IE — the level of introduction. |
 | `intro_lesson_id` | lesson ID | Must exist in `LESSON_INDEX.csv`. |
 | `example_1`, `example_2` | text | Real communicative sentences at/below level. |
@@ -49,7 +58,7 @@ all future tooling must follow them).
 
 | From → To | Required evidence |
 |---|---|
-| planned → introduced | Lesson taught the item explicitly (meaning + form + example). |
+| planned → introduced | Complete authored lesson explicitly teaches meaning + form + example; cite file/section/media evidence. Coverage only, not a learner success. |
 | introduced → practiced | ≥2 correct uses in controlled exercises (different lessons). |
 | practiced → recalled | ≥1 correct retrieval *without* visible support (active-recall task). |
 | recalled → used | ≥1 correct productive use (speaking/writing) in a new context. |
@@ -64,7 +73,7 @@ all future tooling must follow them).
 | `topic` / `sub_structure` | text | Human-readable scope of the row. |
 | `level` | enum | Level of introduction. |
 | `intro_lesson_id` | lesson ID | Must exist in `LESSON_INDEX.csv`. |
-| `prerequisites` | `|`-separated G-IDs | Must exist; no self-reference; chains in Deliverable B §B.8. |
+| `prerequisites` | pipe-separated G-IDs | First-introduced scope dependencies; must exist, no cycles/self-reference or future dependencies in authored lessons. Broader expansion prerequisites remain logged in notes/manifest. |
 | `communicative_purpose` | text | What the learner can *do* with it (first line of every grammar lesson). |
 | `affirmative_example` / `negative_example` / `interrogative_example` | text | Canonical at-level examples; `(rare)` / `(not applicable)` where honest. |
 | `common_errors` | text | Top confusions with corrections. |
@@ -77,7 +86,7 @@ all future tooling must follow them).
 
 | From → To | Required evidence |
 |---|---|
-| planned → introduced | Taught with purpose + form + affirmative/negative/question coverage. |
+| planned → introduced | Complete authored purpose + form + examples for the declared scope. At A0, affirmative/fixed chunks can precede negative/question systems; explicitly log the deferred forms and their later IDs. This is coverage, not achievement. |
 | introduced → practiced | ≥80% accuracy on a controlled mixed set (≥10 items, new sentences). |
 | practiced → assessed | Correct spontaneous use in a speaking/writing task + a test item correct. |
 | assessed → mastered | Full mastery set in §C.5 satisfied. |
@@ -107,7 +116,7 @@ Full column list is defined in `scripts/course_structure.py`
 |---|---|
 | `lesson_id` / `global_seq` | Generated; immutable once published. |
 | `prerequisites` | Previous lesson (linear chain) or previous level test at level starts. |
-| `new_vocab_ids` / `new_grammar_ids` | Filled at authoring; must have matching database rows pointing back. |
+| `new_vocab_ids` / `new_grammar_ids` | Authored in `data/lesson_metadata.json`, overlaid by the generator; matching database rows must point back. Never hand-edit the generated CSV. |
 | `assessment_id` | Set on review lessons (unit tests). |
 | `validation_status` | `planned → drafted → reviewed → validated → tested`. |
 
@@ -164,9 +173,13 @@ material continues (see ASSESSMENT_REGISTER.md remediation rules).
 
 ## C.9 Worked example (vocabulary)
 
-`V0013 name`: introduced A0-M1-U1-L01 (status `introduced`). Controlled
-practice in L02/L04 (`practiced`). Retrieved cold in L06 recall round
-(`recalled`). Used in L04 speaking ("My friend's name is…") (`used`).
-Correct in unit test A0-U01-T (`assessed`). Delayed mixed set + productive
-writing success at +9 days → `mastered`, evidence logged. Any later test
-failure demotes to `assessed` with a repair task — mastery is revocable.
+**Hypothetical learner progression, not actual results:** `V0013 name` has
+its first authored picture-backed introduction in **A0-M1-U1-L02**. Correct
+controlled responses in two different lessons could later support
+`practiced`; an unsupported cold retrieval could support `recalled`; a new
+personal response such as "My name is Anna" could support `used`; a correct
+unit-test item could support `assessed`. Only the full delayed evidence set
+in C.4 permits `mastered`. None of those learner successes has occurred or
+been logged in P-01. Mastery remains revocable after later errors.
+
+Schema/procedure clarification: **C-1.1 (2026-10-18, P-01)**.

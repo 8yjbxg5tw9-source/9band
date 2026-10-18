@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "lessons": {
+    "A0-M1-U1-L01": {
+      "objectives": "Greet and take leave with hello/hi/goodbye/bye; introduce yourself with I am + name; address a pictured person with You are + name.",
+      "new_vocab_ids": "V0001|V0003|V0002|V0004|V0007|V0009|V0008|V0010",
+      "new_grammar_ids": "G003|G004",
+      "skills_focus": "V|G|S|R|W|P|L-script",
+      "assessment_id": "A0-M1-U1-L01-QZ",
+      "validation_status": "drafted",
+      "notes": "P-01: complete picture-led draft; author and automated audits only; independent review/validation and learner testing pending. Eight words; G003 supports the single main I am/You are name frame. Listening is a helper-read script, not recorded audio."
+    },
+    "A0-M1-U1-L02": {
+      "objectives": "Refer to the speaker's and listener's name with my/your; use My name is/Your name is + name; ask What is your name? as a fixed chunk and answer it.",
+      "new_vocab_ids": "V0013|V0011|V0012|V0015|V0014",
+      "new_grammar_ids": "G011|G010",
+      "skills_focus": "V|G|S|R|W|P|L-script",
+      "assessment_id": "A0-M1-U1-L02-QZ",
+      "validation_status": "drafted",
+      "notes": "P-01: complete picture-led draft; author and automated audits only; independent review/validation and learner testing pending. Five words, including explicitly advanced what/is. G011 is my/your + name only; G010 is the fixed name question only, not the productive wh-question system."
+    }
+  }
+}

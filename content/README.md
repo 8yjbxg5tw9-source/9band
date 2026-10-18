@@ -23,4 +23,12 @@ Rules:
    `validated` in `LESSON_INDEX.csv`. Only `validated` lessons ship to
    `student/`.
 
-Current status: no lessons authored yet (architecture phase).
+Current status: **two complete P-01 drafts** at A0-M1-U1-L01/L02 with 28
+actual SVGs in `A0/assets/p01/`. All available author/tool checks pass;
+fresh independent review is pending. No other lesson is authored. Complete
+keys are in each lesson, and sound activities are helper-read scripts only.
+
+Persistent authoring fields live in `data/lesson_metadata.json`, not manual
+CSV edits. Inventory/point-of-use rules are in the P-01 language manifest.
+Student tasks depend on the demonstrated picture/icon route, not on knowing
+the English section headings or instruction verbs.
