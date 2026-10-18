@@ -1,0 +1,134 @@
+{
+  "scope": "PDF conversion of existing P-01 drafts only; no new lesson, independent review, audio or learner evidence",
+  "status": "PASS",
+  "artifacts": [
+    {
+      "path": "exports/P-01-Lessons-1-and-2.pdf",
+      "pages": 43,
+      "bytes": 900692,
+      "sha256": "bf2b6ae0ca2790d36b387cc9cb190b8eb0ab69bc195d322a37c494eea2c30607",
+      "A4": true,
+      "selectable_text": true,
+      "all_text_within_page_bounds": true,
+      "no_missing_unicode_glyphs": true,
+      "lessons": [
+        {
+          "id": "A0-M1-U1-L01",
+          "keyed_prompt_ids_checked": 39,
+          "script_lines_printed": 4,
+          "printed_learner_sections": 20,
+          "machine_record": "hidden, as in source view"
+        },
+        {
+          "id": "A0-M1-U1-L02",
+          "keyed_prompt_ids_checked": 47,
+          "script_lines_printed": 4,
+          "printed_learner_sections": 20,
+          "machine_record": "hidden, as in source view"
+        }
+      ]
+    },
+    {
+      "path": "exports/A0-M1-U1-L01.pdf",
+      "pages": 20,
+      "bytes": 431394,
+      "sha256": "9ada9375acda86671c6948eb6746a5eccefb864eb69fdba46840a895af60919d",
+      "A4": true,
+      "selectable_text": true,
+      "all_text_within_page_bounds": true,
+      "no_missing_unicode_glyphs": true,
+      "lessons": [
+        {
+          "id": "A0-M1-U1-L01",
+          "keyed_prompt_ids_checked": 39,
+          "script_lines_printed": 4,
+          "printed_learner_sections": 20,
+          "machine_record": "hidden, as in source view"
+        }
+      ]
+    },
+    {
+      "path": "exports/A0-M1-U1-L02.pdf",
+      "pages": 23,
+      "bytes": 490755,
+      "sha256": "4a010a2b90759f86b6e0ffc956a7a95d2bc7dd9d69934ac993ad88890e01e852",
+      "A4": true,
+      "selectable_text": true,
+      "all_text_within_page_bounds": true,
+      "no_missing_unicode_glyphs": true,
+      "lessons": [
+        {
+          "id": "A0-M1-U1-L02",
+          "keyed_prompt_ids_checked": 47,
+          "script_lines_printed": 4,
+          "printed_learner_sections": 20,
+          "machine_record": "hidden, as in source view"
+        }
+      ]
+    }
+  ],
+  "original_content_tool_hashes_unchanged": 41,
+  "inputs": {
+    "content/A0/A0-M1-U1-L01.md": "1ad78d4e9ad502994210faa2153c1ce10028ddbe7b87d9f2c7eab2104ebfcc06",
+    "content/A0/assets/p01/actions.svg": "7bedec38adb3ab6dab29acfa71c1accc5e64856444de48333738331d9c62ee97",
+    "content/A0/assets/p01/see.svg": "9a88729d807d37d01329865a2d9dbeb2522f7aed33d9b982e6f77e9e5d3bc2ab",
+    "content/A0/assets/p01/say.svg": "7fde9b8c9f93791ffdcf19c4bfd34a9e52dde8424b503a50532e3fc5e9d7a98e",
+    "content/A0/assets/p01/write.svg": "6fba04f2dfd2583822ef4df6bfec8a0fa8d046453d58ee6fa3c41c250c245883",
+    "content/A0/assets/p01/select.svg": "5efb117f5a699a4b30423a05ce560ded72087f9d78ed5e2227c5c1c737faadff",
+    "content/A0/assets/p01/recall.svg": "3c540c99770f7d7d0c8f14db2bc74f7ddf42eede996d405e02e687a742027081",
+    "content/A0/assets/p01/meet.svg": "692bd69f82f0c8d6a7ae6a6f513cd3384eb94479012d32fb6efd1d77c1f7f2ed",
+    "content/A0/assets/p01/leave.svg": "c2ca42a6f5d0576c8d6a241bfc300208a942900d7913c8b5b7d655dda8aa804f",
+    "content/A0/assets/p01/self-learner.svg": "e58b6f83472021e8f3ad529c0a1c4b67e8f8d4639d7378c8a6152bc09b595bf7",
+    "content/A0/assets/p01/self-anna.svg": "a44c9f4b924617329f64bc826e95fbc4d56e893cd7d395f3561d4eedf09180d5",
+    "content/A0/assets/p01/you-tom.svg": "374199bd656403b196ec232ac2cd5332b1ca1792187d910d78e094524d1999b3",
+    "content/A0/assets/p01/roles.svg": "c57510ed2b50dc512b4fe35e0f64bb01eab0ccb0c2ac5d2618b66e37a0040e1b",
+    "content/A0/assets/p01/self-tom.svg": "a7672557444844a08c575940e483f788ae34ca49a530acfbc78307e30d488821",
+    "content/A0/assets/p01/you-anna.svg": "a3a0e5e1be4131581d5ac5b264eec1dc73baef83553a2c1dc6a17705a74168a9",
+    "content/A0/assets/p01/sounds-l01.svg": "2c6b63f5447ba8109b1984a62759a8a62dba8e67314085c2abf3d330428d5333",
+    "content/A0/assets/p01/ear.svg": "cc03c3b7bb85a9d2fa302f8d14d12ad690990242ca915e9f451e576372ac3456",
+    "content/A0/assets/p01/helper-listening.svg": "21bde2283c2f2c73abc75f726213e2cf177a2b0a5f2faec748fc180448780d28",
+    "content/A0/assets/p01/writing-l01.svg": "7139621fbe6c800ff214488e4c08ff775c8ec7e77c6cc7d96deaa427074a7fae",
+    "content/A0/assets/p01/review-cycle.svg": "38fbf54c38a37d77e72017bfc5e07e90418f717cefaa866b0d95363cce7f936a",
+    "content/A0/A0-M1-U1-L02.md": "9b37f031637477f31fae74ddd24911b5295ee12eff34a79c775e7be9af968e34",
+    "content/A0/assets/p01/question-prompt.svg": "0e936a241a42997f5b4c432d138d9c5068e99910a5b2cbb2ed667aab8b1390b1",
+    "content/A0/assets/p01/name-labels.svg": "d80d6f61dc978c19bcda6bef5dc15eacb371d5e5e1ae449147f4547e593a4077",
+    "content/A0/assets/p01/ownership.svg": "cb86d0ae5f881b25f0edd16cb4076c69c3a3f03b13530f1634d69f6f1b580254",
+    "content/A0/assets/p01/name-frames.svg": "e63350cced724c9629d8e0b5df9737108b169ccbc623557480f02b489d683fc6",
+    "content/A0/assets/p01/question.svg": "b0ee34651387f540621a4886f7ceb90992f4dc18b018f247fb1cb40775ddd009",
+    "content/A0/assets/p01/my-anna.svg": "358fa7822b20fb0c4e1d75c96d61d27b8cf29fcbed413a8f3841ddb930545ead",
+    "content/A0/assets/p01/your-tom.svg": "79319eb32b92b656e79625749978f0b8102efd8acab45b9f0fa4c7fff08b2562",
+    "content/A0/assets/p01/sounds-l02.svg": "741f47c618d0636ba999928c53aeeabb8a99f29170033c282bbe466941576d30",
+    "content/A0/assets/p01/writing-l02.svg": "800ab8ef4c0491a37db86c268026d667bd4b4fd0c65328023a34c39799f6e9f8",
+    "scripts/export_pilot_pdf.cjs": "7fffeff2edf24f467fe599f1dff293f5b41235574183647bbd9f15603d522257"
+  },
+  "renderer": "HeadlessChrome/153.0.8010.0",
+  "limits": [
+    "PDF layout/content checks are not independent lesson validation.",
+    "Sources remain drafted; helper-read scripts are not recorded audio.",
+    "Hidden machine records are not printed; every student exercise, key and recall task is included."
+  ],
+  "visual_review": {
+    "reviewer": "author/tool; not independent pedagogical review",
+    "all_pages": "43-page rendered contact sheet inspected",
+    "reading_size_pages": [
+      1,
+      8,
+      19,
+      20,
+      43
+    ],
+    "notes": "Opening/key pages plus final pronunciation, review/checklist and last-page renders checked; no clipping or missing symbols observed."
+  },
+  "combined_equals_individual_page_sum": true,
+  "core_checks_rerun": {
+    "structure_generator": "PASS: 624 lessons",
+    "svg_builder": "PASS: 28 original visuals",
+    "database_validation": "PASS",
+    "english_audit_normal_and_strict": "PASS: 30 files",
+    "pilot_audit": "PASS: 86 keyed tasks",
+    "regression_tests": "PASS: 33/33",
+    "python_node_syntax": "PASS",
+    "git_diff_check": "PASS"
+  },
+  "recheck_notice": "Rerun PDF inspection and refresh hashes after rebuilding or changing content; this evidence covers only these exact PDF binaries."
+}

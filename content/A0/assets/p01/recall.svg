@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 100 100" role="img" aria-labelledby="title desc">
+<title id="title">Cover, recall, then check</title>
+<desc id="desc">A flap hides a card; a mouth produces the answer before the flap opens.</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#203846"/></marker></defs>
+<rect width="100" height="100" rx="20" fill="#fffdf7"/>
+<rect x="7" y="14" width="53" height="67" rx="18" fill="#d9e8e3" stroke="#0f766e" stroke-width="3"/><path d="M 7 14 L 60 14 L 72 4 L 19 4 Z" fill="#b4d1c6" stroke="#0f766e" stroke-width="2"/><g transform="translate(77 65) scale(0.4)"><ellipse cx="0" cy="0" rx="30" ry="26" fill="#6d3434" stroke="#c77672" stroke-width="7"/><path d="M -17 14 Q 0 3 17 14" fill="none" stroke="#ed9a97" stroke-width="7"/></g>
+</svg>

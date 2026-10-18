@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 100 100" role="img" aria-labelledby="title desc">
+<title id="title">Write or copy</title>
+<desc id="desc">A pencil makes a line on paper.</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#203846"/></marker></defs>
+<rect width="100" height="100" rx="20" fill="#fffdf7"/>
+<rect x="8" y="12" width="67" height="76" rx="18" fill="white" stroke="#ccd9d9" stroke-width="3"/><line x1="20" y1="66" x2="58" y2="66" stroke="#203846" stroke-width="3" stroke-linecap="round"/><g transform="translate(63 46) rotate(-35) scale(0.85)"><path d="M -7 -36 L 7 -36 L 7 24 L 0 38 L -7 24 Z" fill="#efb540" stroke="#203846" stroke-width="3"/><path d="M -4 30 L 0 38 L 4 30" fill="#203846"/></g>
+</svg>
